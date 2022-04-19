@@ -44,11 +44,11 @@ def Classificador(n):
         else:
             saida = saida + ' unidade. '
                
-    print(saida)
+    return saida
 
 # Testes desejados
 variaveis = 326, 300, 100, 320, 310,305, 301, 101, 311, 111, 25, 20, 10, 21, 11, 1, 7, 16
 
 # Laço repetindo os testes
 for i in variaveis:
-    Classificador(i), variaveis
+    print(i, f'- {Classificador(i)}')
